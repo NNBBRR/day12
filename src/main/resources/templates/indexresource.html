@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thymeleaf Dynamic Content Page 1</title>
 </head>
+<h1>
+    Hello, Welcome
+</h1>
+
+<h2>
+    The Current time is <span data-th-text="${currTime}"></span>
+</h2>
+
+<div data-th-if="${currHour le 11}">
+    Good Morning!
+</div>
+
+<div data-th-unless="${currHour le 11}">
+    Good Afternoon!
+</div>
+
+
+
 <body>
+
     
 </body>
 </html>
