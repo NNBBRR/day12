@@ -19,8 +19,21 @@ public class CartService {
         itm.setQuantity(10);
         listItems.add(itm);
 
-        
-        //model.addAttribute("cart", cartItems); 
+        itm = new Item();
+        itm.setItemName("iPad");
+        itm.setQuantity(20);
+        listItems.add(itm);
+
+        itm = new Item();
+        itm.setItemName("iPad Pro");
+        itm.setQuantity(20);
+        listItems.add(itm);
+
+        itm = new Item();
+        itm.setItemName("iPad Air");
+        itm.setQuantity(20);
+        listItems.add(itm);
+
         return listItems; 
     }
     
